@@ -47,8 +47,8 @@ def approval_program():
         App.globalPut(withdrawal_window, Int(86400 * 14)),  # 14 days
         App.globalPut(admin, Txn.sender()),
         App.globalPut(fee_percentage, Int(100)),  # 1% (in basis points)
-        App.globalPut(min_chunks, Int(2)),  # Minimum number of chunks
-        App.globalPut(max_chunks, Int(5)),  # Maximum number of chunks
+        App.globalPut(min_chunks, Int(5)),  # Minimum number of chunks
+        App.globalPut(max_chunks, Int(10)),  # Maximum number of chunks
         Return(Int(1))
     ])
 
